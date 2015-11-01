@@ -1,0 +1,12 @@
+import os, csv
+
+currentPath = os.path.realpath(__file__)
+inputCsv = 'C:\Users\Sarah\Desktop\TECH ACADEMY\python\python day 2\spreadsheet.csv'
+csvFile = open(inputCsv, "r")
+reader = csv.reader(csvFile, delimiter=',')
+for row in reader:
+    print row
+readerData =[]
+for row in reader:
+    readerData.append(row)
+    print readerData
