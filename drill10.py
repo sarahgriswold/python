@@ -22,7 +22,9 @@ if searchAgain == 'y':
     userWantsMore == True
 elif searchAgain =='n':
         userWantsMore == False
+        exit()
 else: userWantsMore == False
+exit()
 
 while userWantsMore == True:
 
