@@ -1,0 +1,11 @@
+import urllib2
+from bs4 import BeautifulSoup
+
+webpage = urllib2.urlopen("http://inadaybooks.com/justiceleague")
+
+site = BeautifulSoup(webpage)
+
+print site.title
+#print site.body
+
+
