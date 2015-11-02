@@ -1,0 +1,10 @@
+import sqlite3
+
+conn = sqlite3.connect('simpsons.db')
+
+# Get data from database / can also use SELECT * from SIMPSON_INFO
+cursor = conn.execute("SELECT ID, NAME, GENDER, AGE, OCCUPATION from SIMPSON_INFO")
+
+# Extract data from cursor
+rows = cursor.fetchall()
+print rows
